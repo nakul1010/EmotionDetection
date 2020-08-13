@@ -1,0 +1,66 @@
+{% extends 'index.html' %}
+{% block content %}
+
+ 
+    <form action="num" method="POST">
+
+        {{ csrf_token }}
+
+        <div class="card text-white bg-info mb-3" style="max-width: 880px;">
+            <div class="card-body">
+              <h5 class="card-title" style="margin-left: 30px;">Q1) How Are you feeling?</h5>
+              <p class="card-text" style="margin-left: 30px;">1)Angry <br>2)Depressed<br>3)Happy <br>4)Hungry<br><br>
+                <input type="number" name="q1">
+                <br><br></p>
+            </div>
+        </div>
+
+        <div class="card text-white bg-primary mb-3" style="max-width: 880px;">
+            <div class="card-body">
+              <h5 class="card-title" style="margin-left: 30px;"><br>Q2) What would make it to make you fell more content happier & more satisfied ?</h5>
+              <p class="card-text" style="margin-left: 30px;"> 1)Sleepy <br>2)Hungry<br>3)Throwing a flask on someone<br>4)Remain alone<br><br>
+                <input type="number" name="q2"><br><br></p>
+            </div>
+        </div>
+
+        <div class="card text-white bg-info mb-3" style="max-width: 880px;">
+            <div class="card-body">
+              <h5 class="card-title" style="margin-left: 30px;">Q3) What do you expect from the counscelling process ?</h5>
+              <p class="card-text" style="margin-left: 30px;">1)Fell more energetic/happy in life <br>2)Proper schedule life<br>3)Improving eating habits<br><br>
+                <input type="number" name="q3">
+                <br><br></p>
+            </div>
+        </div>
+
+        <div class="card text-white bg-primary mb-3" style="max-width: 880px;">
+            <div class="card-body">
+              <h5 class="card-title" style="margin-left: 30px;"><br>Q4) Which One would you choose, if you had two choices : </h5>
+              <p class="card-text" style="margin-left: 30px;"> 1)Take 1lakh & discard junk food from your life completye <br>2)lifetime membership to your favourite fast food centre<br><br>
+                <input type="number" name="q4"><br><br></p>
+            </div>
+        </div>
+
+        <div class="card text-white bg-info mb-3" style="max-width: 880px;">
+            <div class="card-body">
+              <h5 class="card-title" style="margin-left: 30px;">Q5) which of these picture reflect your life?</h5>
+              <p class="card-text" style="margin-left: 30px;">1)Depression <br>2)Sleepy<br>3)Normal<br>3)Nothing<br><br>
+                <input type="number" name="q5">
+                <br><br></p>
+            </div>
+        </div>
+
+        <div class="card text-white bg-primary mb-3" style="max-width: 880px;">
+            <div class="card-body">
+              <h5 class="card-title" style="margin-left: 30px;"><br>Q6) What makes you awake at night?</h5>
+              <p class="card-text" style="margin-left: 30px;"> 1)Don't feel sleepy <br>2)Depression <br>3)Nightmares <br>4)Other Things<br><br>
+                <input type="number" name="q6"><br><br></p>
+            </div>
+        </div>
+        <br>
+        <br>
+        <input type="submit" class="btn btn-primary" style="margin-left: 400px;"></input>
+        <br>
+        <br>
+    </form>
+
+{% endblock %}

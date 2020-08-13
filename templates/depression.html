@@ -1,0 +1,63 @@
+{% extends 'index.html' %}
+{% block content %}
+
+
+    <form action="numd" method="POST">
+
+        {{ csrf_token }}
+
+       <div class="card text-white bg-info mb-3" style="max-width: 880px;">
+            <div class="card-body">
+              <h5 class="card-title" style="margin-left: 30px;">Q1) Has pleasure and joy gone out of life?</h5>
+              <p class="card-text" style="margin-left: 30px;">1)Not at all <br>2)Several days<br>3)More than half of the days<br><br>
+                <input type="number" name="d1"><br><br></p>
+            </div>
+        </div>
+
+        <div class="card text-white bg-primary mb-3" style="max-width: 880px;">
+            <div class="card-body">
+              <h5 class="card-title" style="margin-left: 30px;"><br>Q2) Is your mood affecting your relationships with people ?</h5>
+              <p class="card-text" style="margin-left: 30px;"> 1)YES <br>2)NO<br>3)Sometimes<br>4)Can't Say<br><br>
+                <input type="number" name="d2"><br><br></p>
+            </div>
+        </div>
+
+        <div class="card text-white bg-info mb-3" style="max-width: 880px;">
+            <div class="card-body">
+              <h5 class="card-title" style="margin-left: 30px;">Q3) Are you loosing temper or fighting more than you used?</h5>
+              <p class="card-text" style="margin-left: 30px;">1)YES <br>2)NO<br>3)Sometimes<br>4)Rarely<br><br>
+                <input type="number" name="d3"><br><br></p>
+            </div>
+        </div>
+
+        <div class="card text-white bg-primary mb-3" style="max-width: 880px;">
+            <div class="card-body">
+              <h5 class="card-title" style="margin-left: 30px;"><br>Q4) Do you have faced any abuse /violence in recent weeks?</h5>
+              <p class="card-text" style="margin-left: 30px;"> 1)YES <br>2)NO <br>3)Can't Reveal<br><br>
+                <input type="number" name="d4"><br><br></p>
+            </div>
+        </div>
+
+        <div class="card text-white bg-info mb-3" style="max-width: 880px;">
+            <div class="card-body">
+              <h5 class="card-title" style="margin-left: 30px;">Q5)Over last two weeks ,trouble concentrating things such as watching TV / Reading newspaper?</h5>
+              <p class="card-text" style="margin-left: 30px;">1)Not at all <br>2)Several<br>3)More than half days<br>3)Many days<br><br>
+                <input type="number" name="d5"><br><br></p>
+            </div>
+        </div>
+
+        <div class="card text-white bg-primary mb-3" style="max-width: 880px;">
+            <div class="card-body">
+              <h5 class="card-title" style="margin-left: 30px;"><br>Q6) Has someone in your family faced the problem of depression?</h5>
+              <p class="card-text" style="margin-left: 30px;"> 1)YES <br>2)NO<br>3)Can't Reveal<br><br>
+                <input type="number" name="d6"><br><br></p>
+            </div>
+        </div>
+        <br>
+        <br>
+        <input type="submit" class="btn btn-primary" style="margin-left: 400px;"></input>
+        <br>
+        <br>
+    </form>
+
+{% endblock %}

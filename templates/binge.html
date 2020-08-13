@@ -1,0 +1,67 @@
+{% extends 'index.html' %}
+{% block content %}
+
+
+    <form action="numi" method="POST">
+
+        {{ csrf_token }}
+
+        <div class="card text-white bg-info mb-3" style="max-width: 880px;">
+            <div class="card-body">
+              <h5 class="card-title" style="margin-left: 30px;">Q1) Do you eat more than planned at a meal? ?</h5>
+              <p class="card-text" style="margin-left: 30px;">1)YES <br>2)NO<br><br>
+                <input type="number" name="z1">
+                <br><br></p>
+            </div>
+        </div>
+
+        <div class="card text-white bg-primary mb-3" style="max-width: 880px;">
+            <div class="card-body">
+              <h5 class="card-title" style="margin-left: 30px;"><br>Q2) How often you consume a meal in a day?</h5>
+              <p class="card-text" style="margin-left: 30px;"> 1)2 <br>2)3<br>3)4<br>4)More Than 4<br><br>
+                <input type="number" name="z2"><br><br></p>
+            </div>
+        </div>
+
+        <div class="card text-white bg-info mb-3" style="max-width: 880px;">
+            <div class="card-body">
+              <h5 class="card-title" style="margin-left: 30px;">Q3) Do you have a guilt of overeating?</h5>
+              <p class="card-text" style="margin-left: 30px;">1)I hardly feel any guilt <br>2)Sometimes<br>
+                3)Almost all the time<br>4)Never<br><br>
+                <input type="number" name="z3">
+                <br><br></p>
+            </div>
+        </div>
+
+        <div class="card text-white bg-primary mb-3" style="max-width: 880px;">
+            <div class="card-body">
+              <h5 class="card-title" style="margin-left: 30px;"><br>Q4)  How dissatisfied/satisfied have you been with your weight ?</h5>
+              <p class="card-text" style="margin-left: 30px;"> 1)Everday <br>2)Once a week <br>3)Alternate <br>4)Never<br><br>
+                <input type="number" name="z4"><br><br></p>
+            </div>
+        </div>
+
+        <div class="card text-white bg-info mb-3" style="max-width: 880px;">
+            <div class="card-body">
+              <h5 class="card-title" style="margin-left: 30px;">Q5) For how many hours you can control your hunger?</h5>
+              <p class="card-text" style="margin-left: 30px;">1)2 <br>2)3<br>3)4<br>3)6<br><br>
+                <input type="number" name="z5">
+                <br><br></p>
+            </div>
+        </div>
+
+        <div class="card text-white bg-primary mb-3" style="max-width: 880px;">
+            <div class="card-body">
+              <h5 class="card-title" style="margin-left: 30px;"><br>Q6) Have you have a definite desire to be healthy?</h5>
+              <p class="card-text" style="margin-left: 30px;"> 1)YES <br>2)NO <br><br>
+                <input type="number" name="z6"><br><br></p>
+            </div>
+        </div>
+        <br>
+        <br>
+        <input type="submit" class="btn btn-primary" style="margin-left: 400px;"></input>
+        <br>
+        <br>
+    </form>
+
+{% endblock %}

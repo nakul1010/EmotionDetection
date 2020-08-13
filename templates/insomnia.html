@@ -1,0 +1,63 @@
+{% extends 'index.html' %}
+{% block content %}
+
+
+    <form action="numb" method="POST">
+
+        {{ csrf_token }}
+
+       <div class="card text-white bg-info mb-3" style="max-width: 880px;">
+            <div class="card-body">
+              <h5 class="card-title" style="margin-left: 30px;">Q1)How many hours you sleep daily?</h5>
+              <p class="card-text" style="margin-left: 30px;">1)8 hrs Or greater than that <br>2)6 hours<br>3) 3-4 hrs<br>3) Less than 3<br><br>
+                <input type="number" name="b1"><br><br></p>
+            </div>
+        </div>
+
+        <div class="card text-white bg-primary mb-3" style="max-width: 880px;">
+            <div class="card-body">
+              <h5 class="card-title" style="margin-left: 30px;"><br>Q2) Do you work in shifts?</h5>
+              <p class="card-text" style="margin-left: 30px;"> 1)YES <br>2)NO<br><br>
+                <input type="number" name="b2"><br><br></p>
+            </div>
+        </div>
+
+        <div class="card text-white bg-info mb-3" style="max-width: 880px;">
+            <div class="card-body">
+              <h5 class="card-title" style="margin-left: 30px;">Q3) Are you taking any medication for sleep issues?</h5>
+              <p class="card-text" style="margin-left: 30px;">1)YES <br>2)NO<br><br>
+                <input type="number" name="b3"><br><br></p>
+            </div>
+        </div>
+
+        <div class="card text-white bg-primary mb-3" style="max-width: 880px;">
+            <div class="card-body">
+              <h5 class="card-title" style="margin-left: 30px;"><br>Q4) How Often do you exercise ? </h5>
+              <p class="card-text" style="margin-left: 30px;">1)Everday<br>2)Once a week<br>3) Alternate<br>4)Never<br><br>
+              <input type="number" name="b4"><br><br></p>
+            </div>
+        </div>
+
+        <div class="card text-white bg-info mb-3" style="max-width: 880px;">
+            <div class="card-body">
+              <h5 class="card-title" style="margin-left: 30px;">Q5)D5) Are you tired midday?</h5>
+              <p class="card-text" style="margin-left: 30px;">1)YES <br>2)NO<br>3)Sometimes<br>4)Rarely<br><br>
+                <input type="number" name="b5"><br><br></p>
+            </div>
+        </div>
+
+        <div class="card text-white bg-primary mb-3" style="max-width: 880px;">
+            <div class="card-body">
+              <h5 class="card-title" style="margin-left: 30px;"><br>Q6) Has someone in your family faced the problem of depression?</h5>
+              <p class="card-text" style="margin-left: 30px;">1)Late at night<br>2)Early morning<br>3)Ideal time<br><br>
+                <input type="number" name="b6"><br><br></p>
+            </div>
+        </div>
+        <br>
+        <br>
+        <input type="submit" class="btn btn-primary" style="margin-left: 400px;"></input>
+        <br>
+        <br>
+    </form>
+
+{% endblock %}
