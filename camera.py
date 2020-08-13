@@ -12,7 +12,7 @@ font = cv2.FONT_HERSHEY_SIMPLEX
 
 class VideoCamera(object):
     def __init__(self):
-        self.video = cv2.VideoCapture(1)#'C:/Users/Admin/Desktop/nd/Project/videos/facial_exp.mkv'
+        self.video = cv2.VideoCapture(-1)
 
     def __del__(self):
         self.video.release()
