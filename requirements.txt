@@ -12,3 +12,4 @@ pandas==1.0.3
 xgboost==0.90
 tensorflow==2.0.0
 opencv-python==3.2.0.8
+requests==2.22.0
