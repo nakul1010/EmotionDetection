@@ -22,6 +22,7 @@ class VideoCamera(object):
         _, fr = self.video.read()
         while(fr):
             gray_fr = cv2.cvtColor(fr, cv2.COLOR_BGR2GRAY)
+            print("Inside fr")
         faces = facec.detectMultiScale(gray_fr, 1.3, 5)
 
         for (x, y, w, h) in faces:
