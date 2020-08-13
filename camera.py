@@ -20,7 +20,8 @@ class VideoCamera(object):
     # returns camera frames along with bounding boxes and predictions
     def get_frame(self):
         _, fr = self.video.read()
-        gray_fr = cv2.cvtColor(fr, cv2.COLOR_BGR2GRAY)
+        while(fr):
+            gray_fr = cv2.cvtColor(fr, cv2.COLOR_BGR2GRAY)
         faces = facec.detectMultiScale(gray_fr, 1.3, 5)
 
         for (x, y, w, h) in faces:
