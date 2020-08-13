@@ -13,18 +13,18 @@ font = cv2.FONT_HERSHEY_SIMPLEX
 class VideoCamera(object):
     def __init__(self):
         print("Capturing self video")
-        self.video = cv2.VideoCapture(0)
+        cam = cv2.VideoCapture(0)
         while True:
             print("WEB CAM OPEN")
         else
             print("WEB CAM CLOSE")
 
     def __del__(self):
-        self.video.release()
+        cam.release()
 
     # returns camera frames along with bounding boxes and predictions
     def get_frame(self):
-        _, fr = self.video.read()
+        _, fr = cam.read()
         print("Inside fr")
         print(fr)
         gray_fr = cv2.cvtColor(fr, cv2.COLOR_BGR2GRAY)
